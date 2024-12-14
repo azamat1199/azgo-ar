@@ -3,18 +3,33 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@react-three/drei": "^9.114.6",
+    "@react-three/xr": "^6.2.15",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "add": "^2.0.6",
+    "aframe": "1.2.0",
+    "aframe-ar": "^0.2.1-a",
+    "ar.js": "^2.2.2",
+    "buffer": "^6.0.3",
+    "crypto-browserify": "^3.12.1",
+    "drei": "^2.2.21",
+    "path-browserify": "^1.0.1",
+    "process": "^0.11.10",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "react-three-fiber": "^6.0.13",
+    "stream-browserify": "^3.0.0",
+    "three": "^0.169.0",
+    "web-vitals": "^2.1.4",
+    "yarn": "^1.22.22"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -34,5 +49,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "react-app-rewired": "^2.2.1"
   }
 }

@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import ObjectScannerAR from "./components/ObjectScannerAR/ObjectScannerAR";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>3D Image Viewer</h1>
+      <a-scene embedded arjs="sourceType: webcam;">
+        {/* Marker for AR */}
+        <a-marker preset="hiro">
+          {/* Replace the model path with your 3D model file */}
+          <a-entity
+            gltf-model="https://cdn.jsdelivr.net/gh/KhronosGroup/glTF-Sample-Models/2.0/Duck/glTF/Duck.gltf"
+            scale="0.5 0.5 0.5"
+            position="0 0 0"
+          ></a-entity>
+        </a-marker>
+        <a-entity camera></a-entity>
+      </a-scene>
+      <div style={{ height: "100vh" }}></div>
+      <ObjectScannerAR />
     </div>
   );
-}
+};
 
 export default App;
