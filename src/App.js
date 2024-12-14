@@ -6,9 +6,7 @@ const App = () => {
     <div>
       <h1>3D Image Viewer</h1>
       <a-scene embedded arjs="sourceType: webcam;">
-        {/* Marker for AR */}
         <a-marker preset="hiro">
-          {/* Replace the model path with your 3D model file */}
           <a-entity
             gltf-model="https://cdn.jsdelivr.net/gh/KhronosGroup/glTF-Sample-Models/2.0/Duck/glTF/Duck.gltf"
             scale="0.5 0.5 0.5"
