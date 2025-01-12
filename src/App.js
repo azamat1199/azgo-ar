@@ -4,6 +4,7 @@ import ObjectScanner from "./components/ObjectScanner/ObjectScanner";
 import ArCapture from "./components/ArCapture/ArCapture";
 import ArObjectScanner from "./components/ArObjectScanner/ArObjectScanner.jsx";
 import ArViewer from "./components/ArViewer/ArViewer";
+import MyAr1 from "./components/MyAr_1/MyAR_1.jsx";
 
 const App = () => {
   const [modelUrl, setModelUrl] = useState(null);
@@ -28,11 +29,12 @@ const App = () => {
       {/* <ObjectScannerAR /> */}
       <div>
         {/* <ObjectScanner /> */}
-        {!modelUrl ? (
+        {/* {!modelUrl ? (
           <ArObjectScanner onModelReady={setModelUrl} />
         ) : (
           <ArViewer modelUrl={modelUrl} />
-        )}
+        )} */}
+        <MyAr1 />
       </div>
     </div>
   );

@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@react-three/drei": "^9.120.5",
-    "@react-three/fiber": "^8.17.10",
+    "@react-three/drei": "^9.120.8",
+    "@react-three/fiber": "^8.17.12",
     "@react-three/xr": "^6.2.15",
     "@tensorflow-models/coco-ssd": "^2.2.3",
     "@tensorflow/tfjs": "^4.22.0",
